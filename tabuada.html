@@ -1,0 +1,26 @@
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+// Existe ainda outra maneira de aplicarmos a repetição. Além do while(), existe o for( ; ; ). A instrução for é dividida em três partes que são separadas por ponto e vírgula. A primeira é destinada a variável de incremento, a segunda à condição de repetição e a última ao incremento da variável de incremento.
+
+for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+    mostra(7 * multiplicador);
+}
+
+// Se quisermos incrementar de um em um, podemos usar o pós incremento ++, é um atalho que nos permite escrever menos para deixar o código mais enxuto. Portanto, multiplicador = multiplicador + 1 é o mesmo que multiplicador++.
+
+mostra("FIM");
+
+</script>

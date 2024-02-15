@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<input>
+<button>Compare com meu segredo</button>
+
+<script>
+	
+	var segredo = Math.round(Math.random() * 10);
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	//Daremos um foco no campo de texto sempre que o usuário errar o número utilizando a função input.focus().
+
+	//Utilizaremos a função querySelector() para inserir aquilo que está no mundo HTML na variável input. Ela receberá como parâmetro o nome da tag que desejamos utilizar.
+
+	function verifica() {
+		
+		if(input.value == segredo) {
+
+			alert("Você ACERTOU!");
+		} else {
+
+			alert("Você ERROU!!!!!!!!!");
+		}
+
+		input.value = "";
+		input.focus();
+	}
+
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+	//"on click" significa "no clicar", ou seja, queremos que a verificação seja feita ao clique.
+</script>

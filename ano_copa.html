@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+
+    // O while testará se anoCopa é menor ou igual a 2024, se for verdadeiro, as instruções contidas no bloco serão executadas. Isso significa que o programa acessará o bloco, enquanto anoCopa <= 2024 for verdadeiro. O while(true) indica que sempre será repetido o conteúdo do bloco dessa função. Se o while receber false, nada será repetido.
+
+    while(anoCopa <= 2024) {
+
+        mostra("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+
+    mostra("FIM");
+
+</script>

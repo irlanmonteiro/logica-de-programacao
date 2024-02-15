@@ -1,0 +1,14 @@
+ <meta charset="UTF-8">
+
+<script>
+
+    var idade = parseInt(prompt("Digite sua idade"));
+
+    while( isNaN(idade)) {
+    idade = parseInt(prompt("Digite sua idade"));
+    }
+
+    //Para saber se um valor é NaN precisamos usar uma função específica, a isNaN. Essa função recebe um parâmetro e retorna true ou false caso o valor seja NaN ou não.
+
+    alert("Sua idade é " + idade + " anos.");
+</script>

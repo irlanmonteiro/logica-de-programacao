@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Entre com o número de vitórias.")); //parseInt(), é uma função existente no JavaScript preparada para receber um texto e converter em número. prompt(), usado para capturar informações do usuário.
+    var empates = parseInt(prompt("Entre com número de empates."));
+    var pontos = vitorias * 3 + empates;
+
+
+    mostra ("Os pontos do seu time são " + pontos);
+
+    if (pontos > 28) {
+
+        mostra ("Seu time está melhor do que o ano passado.")
+    }
+    
+
+    if (pontos < 28) {
+
+        mostra ("Seu time está pior do que o ano passado.")
+    }
+    
+    if (pontos == 28) {
+
+        mostra ("Seu time está igual ao ano passado.")  
+    } //O símbolo igual (=) é utilizado para indicar uma atribuição. Para testarmos uma igualdade e para que o JavaScript saiba que queremos atribuir ou comparar algo, temos de utilizar o símbolo duas vezes (==).
+    
+    mostra("FIM");
+</script>
